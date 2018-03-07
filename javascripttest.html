@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JavaScript Exercise</title>
+  <script>
+    function doSomething(){
+      alert("Hello, World!");
+      /* this is conditional if
+      let x = '5';
+        if(x == 5){
+        //3 equal signs means same value and data type
+        //2 equal signs means same value only
+        alert("x is 5");
+      } else{
+        alert("x is not 5");
+      }*/
+      for(let i=1; i<50; i++){
+        if(i%5==0 && i%3==0){
+          console.log("buzz");
+        }
+        else if(i%3==0){
+          console.log(i);
+        }
+        else if(i%5==0){
+          console.log(i);
+        }
+      }
+    }
+    window.onload = doSomething;
+  </script>
+</head>
+<body>
+  <div>
+    <p id="text">JavaScript</p>
+  </div>
+</body>
+</html>

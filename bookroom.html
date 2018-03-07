@@ -1,0 +1,68 @@
+<html>
+  <head>
+    <script type="text/javascript" src="javascriptvalidation.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Pranama Hotel & resorts - Home</title>
+  </head>
+  <body>
+    <header>
+      <img src="logo2.png" align="middle">
+    </header>
+    <nav>
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="facility.html">Facility</a></li>
+        <li>Book Room</li>
+      </ul>
+    </nav>
+    <hr>
+    <form name="myForm" method="get" action="process.php" onsubmit="return validTest()">
+      <table>
+        <tr>
+          <th colspan="2" >Book Room</th>
+        </tr>
+        <tr>
+          <td><label>Name</label></td>
+          <td><input type="text" name="name"></td>
+        </tr>
+        <tr>
+          <td><label>Email</label></td>
+          <td><input type="email" name="email"></td>
+        </tr>
+        <tr>
+          <td><label>Phone</label></td>
+          <td><input type="number" name="phonenum"></td>
+        </tr>
+        <tr>
+          <td><label>Stay in date</label></td>
+          <td><input type="date" name="date"></td>
+        </tr>
+        <tr>
+          <td><label>length of Stay (days)</label></td>
+          <td><input type="number" name="days"></td>
+        </tr>
+        <tr>
+          <td><label>Room Type</label></td>
+          <td><select name="room">
+                <option selected>Select room</option>
+                <option>Deluxe room - $274</option>
+                <option>Deluxe room villa - $438</option>
+                <option>1 bedroom pool villa - $525</option>
+                <option>2 bedroom pool villa - $635</option>
+              </select>
+          </td>
+        </tr>
+        <tr>
+          <td><label>Additional Charge</label></td>
+          <td><input type="checkbox" name="adC" value="xtraBed">Extra Bed - $80</br>
+              <input type="checkbox" name="adC" value="airportS">Airport Shuttle - $40</br>
+              <input type="checkbox" name="adC" value="UTour">Ubud Tour 1D - $100</br>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2"><input type="submit" value="submit"></td>
+        </tr>
+      </table>
+  </form>
+    <footer>
+      <p>&copy; </code>2017 Pramana Experience - All Rights Reserved.</p>
